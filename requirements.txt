@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+pyTelegramBotAPI
+python-dotenv
+requests
+pytest
+httpx

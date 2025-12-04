@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonch Lectures</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>📚 Лекции</h1>
+            <div id="user-info"></div>
+        </header>
+
+        <main>
+            <div id="courses-list" class="view">
+                <h2>Выберите курс</h2>
+                <div id="courses-container" class="grid"></div>
+            </div>
+
+            <div id="topics-list" class="view hidden">
+                <button class="back-btn" onclick="showCourses()">🔙 Назад к курсам</button>
+                <h2 id="current-course-title"></h2>
+                <input type="text" id="search" placeholder="🔍 Поиск по темам..." oninput="filterTopics()">
+                <div id="topics-container" class="list"></div>
+            </div>
+        </main>
+        
+        <div id="notification" class="notification hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
